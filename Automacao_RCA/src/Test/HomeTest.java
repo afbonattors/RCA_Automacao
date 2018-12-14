@@ -16,8 +16,6 @@ public class HomeTest extends BaseTest {
 		
 		System.out.println("Teste HomePage\n");
 		
-		getDriver().navigate().to(Safra);
-		
 		String PageTitle = getDriver().getTitle();
 		
 		Assert.assertTrue(PageTitle.equals("Safra National Bank"));
