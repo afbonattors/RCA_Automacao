@@ -15,7 +15,7 @@ public abstract class BaseTest {
     public static String Safra = "http://www.safra.com/";
 
     @BeforeClass
-    public void setUp() {
+    public static void setUp() {
     	
     	System.out.println("\nInicia driver.\n");
 
@@ -30,7 +30,7 @@ public abstract class BaseTest {
         	ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--start-maximized", "--disable-notifications");
             System.setProperty("webdriver.chrome.driver", driverPath);
-            driver = new ChromeDriver(chromeOptions);
+            driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
 
         }
