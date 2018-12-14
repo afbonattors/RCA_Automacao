@@ -32,7 +32,7 @@ public class HomeTest extends BaseTest {
 		
 		Assert.assertTrue(HomePage.divAboutSafra().isDisplayed());
 		
-		ScriptFooter.testHeader();
+		ScriptFooter.testFooter();
 		
 	}
 
