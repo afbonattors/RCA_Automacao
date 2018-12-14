@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class BaseTest {
 
     public static WebDriver driver;
-    public static String driverPath = "C:\\Selenium\\Gecko_Driver\\geckodriver.exe";
+    public static String driverPath = "C:\\Selenium\\Chrome_Driver\\chromedriver.exe";
     public static String Safra = "http://www.safra.com/";
 
     @BeforeClass
@@ -29,8 +29,8 @@ public abstract class BaseTest {
 
         	ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--start-maximized", "--disable-notifications");
-            System.setProperty("webdriver.gecko.driver", driverPath);
-            driver = new ChromeDriver();
+            System.setProperty("webdriver.chrome.driver", driverPath);
+            driver = new ChromeDriver(chromeOptions);
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
 
         }
