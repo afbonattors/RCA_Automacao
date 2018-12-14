@@ -25,9 +25,15 @@ public class HomePage extends BaseTest {
 		
 	}
 	
-	public static WebElement divAboutSafra() {
+	public static WebElement divAbout() {
 		
-		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"home\"]/div[2]/div[2]"));
+		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]"));
+		
+	}
+	
+	public static WebElement divOrigins() {
+		
+		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/ul/li[1]"));
 		
 	}
 

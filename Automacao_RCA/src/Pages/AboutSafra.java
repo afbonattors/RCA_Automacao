@@ -7,7 +7,13 @@ import Utils.BaseTest;
 
 public class AboutSafra extends BaseTest {
 	
-	public static WebElement divDescription () {
+	public static WebElement clickAbout() {
+		
+		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/ul/li[1]"));
+		
+	}
+	
+	public static WebElement divDescription() {
 		
 		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"about\"]/div[2]"));
 		

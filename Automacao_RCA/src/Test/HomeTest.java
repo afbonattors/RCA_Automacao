@@ -30,7 +30,7 @@ public class HomeTest extends BaseTest {
 		
 		Assert.assertTrue(HomePage.divFinancialHighlights().isDisplayed());
 		
-		Assert.assertTrue(HomePage.divAboutSafra().isDisplayed());
+		Assert.assertTrue(HomePage.divAbout().isDisplayed());
 		
 		ScriptFooter.testFooter();
 		
