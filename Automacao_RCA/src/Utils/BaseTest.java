@@ -3,7 +3,6 @@ package Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
@@ -28,10 +27,10 @@ public abstract class BaseTest {
 
         if (driver == null) {
 
-        	/*ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("--start-maximized", "--disable-notifications");*/
+        	ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--start-maximized", "--disable-notifications");
             System.setProperty("webdriver.gecko.driver", driverPath);
-            driver = new FirefoxDriver();
+            driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
 
         }
