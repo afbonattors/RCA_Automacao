@@ -28,11 +28,17 @@ public class AboutTest extends BaseTest {
 		
 		Thread.sleep(1000);
 		
+		AboutScript.clickAboutDiv();
+		
+		Thread.sleep(1000);
+		
 		Assert.assertTrue(AboutSafraPage.divDescription().isDisplayed());
 		
 		Thread.sleep(1000);
 		
 		ScriptFooter.testFooter();
+		
+		Thread.sleep(1000);
 		
 	}
 
