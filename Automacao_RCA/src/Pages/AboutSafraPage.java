@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 
 import Utils.BaseTest;
 
-public class AboutSafra extends BaseTest {
+public class AboutSafraPage extends BaseTest {
 	
 	public static WebElement clickAbout() {
 		
