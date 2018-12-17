@@ -3,17 +3,37 @@ package Test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import Pages.SafraOriginsPage;
-import Scripts.SafraOrignsScript;
+import Pages.AboutSafraPage;
+import Scripts.AboutScript;
 import Scripts.ScriptFooter;
 import Scripts.ScriptHeader;
 import Utils.BaseTest;
 
-class AboutTest {
+public class AboutTest extends BaseTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void aboutTest() throws Exception {
+		
+		System.out.println("About Page Test\n");	
+		
+		String PageTitle = getDriver().getTitle();
+		
+		Assert.assertTrue(PageTitle.equals("Safra National Bank"));
+		
+		ScriptHeader.testHeader();
+		
+		Thread.sleep(1000);
+		
+		AboutScript.clickAbout();
+		
+		Thread.sleep(1000);
+		
+		Assert.assertTrue(AboutSafraPage.divDescription().isDisplayed());
+		
+		Thread.sleep(1000);
+		
+		ScriptFooter.testFooter();
+		
 	}
 
 }

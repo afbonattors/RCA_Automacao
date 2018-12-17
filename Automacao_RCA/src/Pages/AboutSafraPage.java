@@ -7,9 +7,9 @@ import Utils.BaseTest;
 
 public class AboutSafraPage extends BaseTest {
 	
-	public static WebElement clickAbout() {
+	public static WebElement divAbout() {
 		
-		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/ul/li[1]"));
+		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/ul/li[2]"));
 		
 	}
 	

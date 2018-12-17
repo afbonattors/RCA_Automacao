@@ -31,6 +31,12 @@ public class HomePage extends BaseTest {
 		
 	}
 	
+	public static WebElement divClickAbout() {
+		
+		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/ul/li[2]"));
+		
+	}
+	
 	public static WebElement divOrigins() {
 		
 		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]/ul/li[1]"));
