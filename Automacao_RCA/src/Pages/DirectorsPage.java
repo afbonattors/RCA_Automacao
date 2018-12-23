@@ -7,7 +7,7 @@ import Utils.BaseTest;
 
 public class DirectorsPage extends BaseTest {
 	
-	public static WebElement divDescription () {
+	public static WebElement divDescription() {
 		
 		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"about\"]/div[2]"));
 		
