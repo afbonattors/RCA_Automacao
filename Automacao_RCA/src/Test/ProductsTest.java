@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import Pages.ProductsPage;
-import Scripts.DirectorsScript;
+import Scripts.ProductsScript;
 import Scripts.ScriptFooter;
 import Scripts.ScriptHeader;
 import Utils.BaseTest;
@@ -24,19 +24,13 @@ public class ProductsTest extends BaseTest {
 		
 		Thread.sleep(1000);
 		
-		DirectorsScript.clickDirectorsDiv();
-		
-		Thread.sleep(1000);
+		ProductsScript.menuProducts();
 		
 		Thread.sleep(1000);
 		
 		Assert.assertTrue(ProductsPage.divProducts().isDisplayed());
 		
-		Thread.sleep(1000);
-		
 		Assert.assertTrue(ProductsPage.divTreasury().isDisplayed());
-		
-		Thread.sleep(1000);
 		
 		Assert.assertTrue(ProductsPage.divInternational().isDisplayed());
 		
