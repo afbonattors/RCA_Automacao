@@ -6,7 +6,7 @@ public class ProductsScript extends HomePage{
 	
 	public static void menuProducts() {
 		
-		divDirectors().click();
+		divProducts().click();
 		
 	}
 
