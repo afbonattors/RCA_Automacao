@@ -15,7 +15,7 @@ public class HomePage extends BaseTest {
 	
 	public static WebElement divProducts() {
 		
-		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"home\"]/div[1]/div"));
+		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[2]"));
 		
 	}
 	
