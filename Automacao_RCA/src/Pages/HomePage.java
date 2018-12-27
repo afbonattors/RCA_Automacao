@@ -21,7 +21,7 @@ public class HomePage extends BaseTest {
 	
 	public static WebElement divFinancialHighlights() {
 		
-		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"home\"]/div[2]/div[1]"));
+		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[3]"));
 		
 	}
 	

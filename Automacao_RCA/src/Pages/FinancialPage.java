@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 
 import Utils.BaseTest;
 
-public class PageFinancial extends BaseTest {
+public class FinancialPage extends BaseTest {
 	
 	public static WebElement divHighlights() {
 		
