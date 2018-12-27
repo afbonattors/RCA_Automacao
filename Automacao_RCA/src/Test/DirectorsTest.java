@@ -15,7 +15,7 @@ public class DirectorsTest extends BaseTest {
 	@Test
 	public void directorsTest() throws Exception {
 		
-		System.out.println("About Page Test\n");	
+		System.out.println("Teste Directors Page\n");	
 		
 		String PageTitle = getDriver().getTitle();
 		

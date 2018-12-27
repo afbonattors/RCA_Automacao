@@ -14,7 +14,7 @@ public class ProductsTest extends BaseTest {
 	@Test
 	public void productsTest() throws Exception {
 		
-		System.out.println("Products & Services Page Test\n");	
+		System.out.println("Teste Products & Services Page\n");	
 		
 		String PageTitle = getDriver().getTitle();
 		

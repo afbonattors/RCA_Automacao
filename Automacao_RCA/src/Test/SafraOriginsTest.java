@@ -14,7 +14,7 @@ public class SafraOriginsTest extends BaseTest {
 	@Test
 	public void originsTest() throws Exception {
 		
-		System.out.println("Teste Origins\n");
+		System.out.println("Teste Origins Page\n");
 		
 		String PageTitle = getDriver().getTitle();
 		
