@@ -25,6 +25,12 @@ public class HomePage extends BaseTest {
 		
 	}
 	
+	public static WebElement divAnnualReport() {
+		
+		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[4]"));
+		
+	}
+	
 	public static WebElement divAbout() {
 		
 		return BaseTest.getDriver().findElement(By.xpath("//*[@id=\"menu\"]/ul/li[1]"));
