@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import Scripts.AnnualReportScript;
+import Scripts.ScriptFooter;
 import Scripts.ScriptHeader;
 import Utils.BaseTest;
 
@@ -14,9 +15,9 @@ public class AnnualReportTest extends BaseTest {
 		
 		System.out.println("Teste Annual Report\n");
 		
-		String pageTitle = getDriver().getTitle();
+		String PageTitle = getDriver().getTitle();
 		
-		Assert.assertEquals(pageTitle, "Safra National Bank");
+		Assert.assertEquals(PageTitle, "Safra National Bank");
 		
 		Thread.sleep(1000);
 		
@@ -24,7 +25,15 @@ public class AnnualReportTest extends BaseTest {
 		
 		Thread.sleep(1000);
 		
+		ScriptFooter.testFooter();
 		
+		AnnualReportScript.clickAnnualReport();
+		
+		Thread.sleep(10000);
+		
+		String pdfAnnual = driver.getCurrentUrl();
+		
+		Assert.assertTrue(pdfAnnual.contains(".pdf"));		
 		
 	}
 
